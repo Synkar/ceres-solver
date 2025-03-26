@@ -775,3 +775,17 @@ if (EXPORT_BUILD_DIR)
     "${Ceres_BINARY_DIR}/CeresConfig.cmake" @ONLY)
 
 endif (EXPORT_BUILD_DIR)
+
+set(CPACK_PACKAGE_NAME "${PROJECT_NAME}")
+set(CPACK_PACKAGE_VERSION "2.2.0")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "A large scale non-linear optimization library")
+
+set(CPACK_GENERATOR "DEB")
+
+set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-Linux-x86_64.tgz")
+
+set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE "amd64")
+
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Nigel Dias <nigel.dias@synkar.com>")
+
+include(CPack)
