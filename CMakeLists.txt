@@ -799,4 +799,6 @@ set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE "amd64")
 
 set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Nigel Dias <nigel.dias@synkar.com>")
 
+set(CPACK_DEBIAN_PACKAGE_DEPENDS "libgoogle-glog-dev, libgflags-dev, libatlas-base-dev, libsuitesparse-dev, libeigen3-dev")
+
 include(CPack)
